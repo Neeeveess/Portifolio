@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+/* CABEÇALHO */
+#header {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #1a1734, #110f24);
+  box-shadow: 0 0 2px #3984cd;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.cabecalho {
+  position: relative;
+  height: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.meu_nome {
+  display: flex;
+  padding: 0 1.3em;
+  font-size: 24px;
+  line-height: 2em;
+  font-weight: 600;
+  min-width: 50%;
+}
+.meu_nome a {
+  background: -webkit-linear-gradient(#00d8ac, #575bde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.meu_nome a:hover {
+  line-height: 2.2;
+  transform: scaleX(1.1);
+}
+.meu_nome a:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 47%;
+  left: -5%;
+  width: 110%;
+  border-bottom: 2px solid #3984cd;
+}
+.nav_menu {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 4em;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.nav_menu a {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+}
+.nav_menu a:hover {
+  background: -webkit-linear-gradient(#00d8ac, #575bde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav_menu a:hover:after {
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #3984cd;
+}
+
+/* CORPO */
+
+/* SESSAO INICIO */
+.main {
+  display: block;
+  background-image: linear-gradient(to top, #110f24, #1a1734);
+  width: 100%;
+}
+.sessao {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 60vh;
+  min-width: 50%;
+  justify-content: center;
+  gap: 4em;
+}
+
+.bloco_img {
+  display: flex;
+  border: 3px solid #00d8ac;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.bloco_img img {
+  width: 19em;
+  height: 19em;
+  border-radius: 50%;
+  box-shadow: 0 0 1.5em #575bde;
+}
+.bloco_direita {
+  display: flex;
+  flex-direction: column;
+}
+.bloco_texto {
+  display: flex;
+  flex-flow: column nowrap;
+  text-transform: uppercase;
+  line-height: 3.5em;
+  text-align: center;
+}
+.text_ {
+  color: #fff;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+.text_nome a {
+  position: relative;
+  background: -webkit-linear-gradient(#00d8ac, #575bde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+.text_nome a:hover:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 12%;
+  width: 76%;
+  border-bottom: 3px solid #3984cd;
+}
+.bloco_redes {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5em;
+  justify-content: center;
+  margin-top: 2em;
+  font-size: 20px;
+  font-weight: 600;
+}
+.bloco_linkedin a {
+  padding: 0.7em;
+  border-radius: 0.6em;
+  border: 2px solid #0e76a8;
+  color: #c9c9c9;
+}
+.bloco_github a {
+  padding: 0.7em;
+  border-radius: 0.6em;
+  border: 2px solid #800080;
+  color: #c9c9c9;
+}
+.bloco_linkedin a:hover {
+  color: #fff;
+  box-shadow: 0 0 1em #0e76a8;
+}
+.bloco_github a:hover {
+  color: #fff;
+  box-shadow: 0 0 1em #800080;
+}
+
+/* SESSAO SOBRE */
+.container_2 {
+  background-image: linear-gradient(to bottom, #1a1734, #110f24);
+  box-shadow: 0 0 2px #3984cd;
+}
+.sobre {
+  margin: 0 auto;
+  width: 80%;
+  justify-content: start;
+}
+.bloco_texto_sobre {
+  display: flex;
+  flex-flow: column nowrap;
+  color: #c9c9c9;
+  justify-content: start;
+}
+.bloco_texto_sobre h1 {
+  background: -webkit-linear-gradient(#00d8ac, #575bde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 2em;
+}
+.bloco_texto_sobre h3 {
+  text-align: start;
+  margin-bottom: 1em;
+}
+.bloco_texto_sobre p {
+  text-align: justify;
+  line-height: 1.6em;
+  font-size: 20px;
+}
+
+/* SESSAO EXPERIENCIA */
+.bloco_experiencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #c9c9c9;
+}
+.titulo h1 {
+  background: -webkit-linear-gradient(#00d8ac, #575bde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 2em;
+}
+.cards_experiencias {
+  display: flex;
+  justify-content: space-around;
+  flex: row nowrap 20%;
+}
+.card_experiencia {
+  min-width: 20%;
+  margin: 0 1em;
+  padding: 1em;
+  border: 2px solid #0e76a8;
+  border-radius: 2em;
+}
+.card_experiencia p {
+  margin-bottom: 1em;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 20px;
+}
+.card_experiencia h2 {
+  background: -webkit-linear-gradient(#00d8ac, #575bde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+/* SESSAO PROJETOS */
+.bloco_projeto {
+  display: flex;
+  flex-direction: column;
+}
+.bloco_cards {
+  display: flex;
+  justify-content: space-around;
+  flex: row wrap 50%;
+}
+.card {
+  min-height: 20em;
+  width: 30em;
+  padding: 0.2em;
+}
+.bloco_card_img {
+  width: 100%;
+}
+.bloco_card_img img {
+  width: 100%;
+  border-radius: 0 1em 1em 0;
+  border-left: 0.4em solid #0e76a8;
+}
+.bloco_card_text {
+  color: #c9c9c9;
+  padding: 0 1em;
+}
+.bloco_card_text h2 {
+  background: -webkit-linear-gradient(#00d8ac, #575bde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+.bloco_card_text p {
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+.bloco_card_text h3 {
+  text-align: center;
+  background: -webkit-linear-gradient(#00d8ac, #575bde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 21px;
+}
